@@ -162,3 +162,29 @@
 				console.log(key)
 			}
 			binaryTree.traverse(callback)
+12.Vue -- 知识总结
+	-- 1.MVC(Controller) --> MVP(Presenter) --> MVVM(viewModel)
+	-- 2.组件间的传值
+		-- 父 --> 子 -- props 
+		-- 子 --> 父	 -- 事件($emit 触发)
+		-- 任意组件间 -- Bus 总线 / slot 插槽
+	-- 3.Vuex 状态管理
+		-- state -- getter -- mutation -- action -- module
+	-- 4.v-if(销毁元素-重新创建元素)  v-show(控制display实现显示隐藏)
+	
+13.正则表达式 (大写字母反义)
+	-- \b 单词边界
+	-- \d 数字字符
+	-- \s 空白字符
+	-- \w 匹配包括下划线的任何单词字符
+	-- 电子邮箱：
+		-- /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+		-- /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/
+	-- 用户名：
+		-- /^[a-z0-9_-]{3,16}$/
+	-- 密码：
+		-- /^[a-z0-9_-]{6,18}$/
+	-- URL：
+		-- /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+
+14.
